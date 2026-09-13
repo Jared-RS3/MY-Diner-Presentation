@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 720" width="600" height="720">
+  <defs>
+    <linearGradient id="room" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3a2412"/><stop offset="40%" stop-color="#24150b"/>
+      <stop offset="76%" stop-color="#160d07"/><stop offset="100%" stop-color="#2c1b0e"/>
+    </linearGradient>
+    <radialGradient id="lamp">
+      <stop offset="0%" stop-color="#fff0d4" stop-opacity="1"/>
+      <stop offset="26%" stop-color="#ffca85" stop-opacity=".62"/>
+      <stop offset="100%" stop-color="#e08a2e" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cone" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffd7a0" stop-opacity=".13"/>
+      <stop offset="70%" stop-color="#ffd7a0" stop-opacity=".05"/>
+      <stop offset="100%" stop-color="#ffd7a0" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="arch" cx="50%" cy="26%">
+      <stop offset="0%" stop-color="#6b4520" stop-opacity=".7"/><stop offset="100%" stop-color="#2a190c" stop-opacity=".9"/>
+    </radialGradient>
+    <linearGradient id="tabletop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8a5429"/><stop offset="60%" stop-color="#5a331a"/><stop offset="100%" stop-color="#331d0f"/>
+    </linearGradient>
+    <linearGradient id="banq" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3b2412"/><stop offset="100%" stop-color="#1a0f07"/>
+    </linearGradient>
+    <radialGradient id="vig" cx="50%" cy="40%" r="74%">
+      <stop offset="52%" stop-color="#000" stop-opacity="0"/><stop offset="100%" stop-color="#000" stop-opacity=".74"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="600" height="720" fill="url(#room)"/>
+
+  <!-- back wall: vertical timber slats -->
+  <g stroke="#000" stroke-opacity=".26" stroke-width="2">
+    <line x1="40" y1="180" x2="40" y2="560"/><line x1="88" y1="180" x2="88" y2="560"/>
+    <line x1="136" y1="180" x2="136" y2="560"/><line x1="184" y1="180" x2="184" y2="560"/>
+    <line x1="416" y1="180" x2="416" y2="560"/><line x1="464" y1="180" x2="464" y2="560"/>
+    <line x1="512" y1="180" x2="512" y2="560"/><line x1="560" y1="180" x2="560" y2="560"/>
+  </g>
+  <!-- central arch alcove -->
+  <path d="M196 560V346a104 104 0 0 1 208 0v214z" fill="url(#arch)" stroke="#c99360" stroke-opacity=".22" stroke-width="1.5"/>
+  <path d="M216 560V352a84 84 0 0 1 168 0v208z" fill="#1d1108" opacity=".55"/>
+
+  <!-- light cones -->
+  <g>
+    <path d="M138 200 L268 600 L8 600 Z" fill="url(#cone)"/>
+    <path d="M300 168 L456 600 L144 600 Z" fill="url(#cone)"/>
+    <path d="M462 214 L588 600 L336 600 Z" fill="url(#cone)"/>
+  </g>
+
+  <!-- pendants -->
+  <g>
+    <line x1="138" y1="0" x2="138" y2="166" stroke="#e8bd85" stroke-opacity=".3" stroke-width="1.6"/>
+    <path d="M114 166h48l-10 26h-28z" fill="#4a2f1c" stroke="#c99360" stroke-opacity=".45"/>
+    <circle cx="138" cy="200" r="30" fill="url(#lamp)"/>
+    <circle cx="138" cy="196" r="4.5" fill="#fff3dc"/>
+
+    <line x1="300" y1="0" x2="300" y2="130" stroke="#e8bd85" stroke-opacity=".3" stroke-width="1.8"/>
+    <path d="M270 130h60l-12 30h-36z" fill="#4a2f1c" stroke="#c99360" stroke-opacity=".5"/>
+    <circle cx="300" cy="170" r="38" fill="url(#lamp)"/>
+    <circle cx="300" cy="166" r="6" fill="#fff6e6"/>
+
+    <line x1="462" y1="0" x2="462" y2="182" stroke="#e8bd85" stroke-opacity=".3" stroke-width="1.6"/>
+    <path d="M440 182h44l-9 24h-26z" fill="#4a2f1c" stroke="#c99360" stroke-opacity=".42"/>
+    <circle cx="462" cy="214" r="27" fill="url(#lamp)"/>
+    <circle cx="462" cy="210" r="4" fill="#fff3dc"/>
+  </g>
+
+  <!-- banquette -->
+  <path d="M-10 470h620v96H-10z" fill="url(#banq)"/>
+  <path d="M-10 470h620v10H-10z" fill="#c99360" opacity=".12"/>
+
+  <!-- chairs -->
+  <g>
+    <rect x="132" y="470" width="128" height="118" rx="20" fill="#0f0906"/>
+    <rect x="132" y="470" width="128" height="4" rx="2" fill="#c99360" opacity=".22"/>
+    <rect x="342" y="482" width="120" height="106" rx="18" fill="#0f0906"/>
+    <rect x="342" y="482" width="120" height="4" rx="2" fill="#c99360" opacity=".18"/>
+  </g>
+
+  <!-- table -->
+  <path d="M-10 572h620v24c0 10-8 16-20 16H10c-12 0-20-6-20-16z" fill="url(#tabletop)"/>
+  <rect x="-10" y="612" width="620" height="120" fill="#170e07"/>
+
+  <!-- setting -->
+  <g>
+    <ellipse cx="158" cy="580" rx="54" ry="12" fill="#efe5d3" opacity=".95"/>
+    <ellipse cx="158" cy="578" rx="35" ry="7.5" fill="#c96a26" opacity=".9"/>
+    <ellipse cx="430" cy="576" rx="48" ry="11" fill="#efe5d3" opacity=".9"/>
+    <ellipse cx="430" cy="574" rx="30" ry="6.5" fill="#b8531f" opacity=".85"/>
+    <ellipse cx="296" cy="584" rx="32" ry="8" fill="#ddcfb7" opacity=".72"/>
+    <g fill="#f7e9cd" opacity=".62">
+      <path d="M258 532c0 15 5 24 12 26v20h-7v6h22v-6h-7v-20c7-2 12-11 12-26z"/>
+      <path d="M330 538c0 13 4 20 10 22v18h-6v5h19v-5h-6v-18c6-2 10-9 10-22z"/>
+    </g>
+    <rect x="76" y="574" width="28" height="3.4" rx="1.7" fill="#c9b799" opacity=".5"/>
+    <rect x="496" y="572" width="28" height="3.4" rx="1.7" fill="#c9b799" opacity=".45"/>
+  </g>
+
+  <rect width="600" height="720" fill="url(#vig)"/>
+</svg>

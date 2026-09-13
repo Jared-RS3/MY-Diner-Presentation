@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="cloth" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#33200f"/><stop offset="60%" stop-color="#1c1108"/><stop offset="100%" stop-color="#2a1a0d"/>
+    </linearGradient>
+    <radialGradient id="turm" cx="38%" cy="30%"><stop offset="0%" stop-color="#f0b52e"/><stop offset="100%" stop-color="#b57a10"/></radialGradient>
+    <radialGradient id="chil" cx="38%" cy="30%"><stop offset="0%" stop-color="#d9481f"/><stop offset="100%" stop-color="#8f2a10"/></radialGradient>
+    <radialGradient id="masa" cx="38%" cy="30%"><stop offset="0%" stop-color="#a8703c"/><stop offset="100%" stop-color="#68411f"/></radialGradient>
+    <radialGradient id="glow3" cx="30%" cy="20%" r="76%">
+      <stop offset="0%" stop-color="#ffcf95" stop-opacity=".34"/><stop offset="100%" stop-color="#ffcf95" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vig3" cx="50%" cy="48%" r="70%">
+      <stop offset="56%" stop-color="#000" stop-opacity="0"/><stop offset="100%" stop-color="#000" stop-opacity=".62"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="400" height="400" fill="url(#cloth)"/>
+  <rect width="400" height="400" fill="url(#glow3)"/>
+
+  <g>
+    <ellipse cx="112" cy="150" rx="78" ry="60" fill="#000" opacity=".34"/>
+    <ellipse cx="108" cy="144" rx="76" ry="58" fill="url(#turm)"/>
+    <path d="M42 152c22-38 62-52 100-40" fill="none" stroke="#ffdc7a" stroke-width="9" stroke-linecap="round" opacity=".45"/>
+  </g>
+  <g>
+    <ellipse cx="288" cy="122" rx="66" ry="50" fill="#000" opacity=".34"/>
+    <ellipse cx="284" cy="116" rx="64" ry="48" fill="url(#chil)"/>
+    <path d="M232 122c18-30 52-42 82-32" fill="none" stroke="#ff8a55" stroke-width="8" stroke-linecap="round" opacity=".4"/>
+  </g>
+  <g>
+    <ellipse cx="204" cy="300" rx="92" ry="62" fill="#000" opacity=".34"/>
+    <ellipse cx="200" cy="294" rx="90" ry="60" fill="url(#masa)"/>
+    <path d="M126 300c24-38 70-52 112-40" fill="none" stroke="#d3a06a" stroke-width="9" stroke-linecap="round" opacity=".38"/>
+  </g>
+
+  <g fill="#e0b46a" opacity=".5">
+    <circle cx="46" cy="286" r="3"/><circle cx="66" cy="318" r="2.2"/><circle cx="350" cy="248" r="2.6"/>
+    <circle cx="332" cy="292" r="3.2"/><circle cx="176" cy="52" r="2.4"/><circle cx="212" cy="34" r="3"/>
+    <circle cx="370" cy="184" r="2"/><circle cx="30" cy="212" r="2.4"/>
+  </g>
+  <rect width="400" height="400" fill="url(#vig3)"/>
+</svg>
